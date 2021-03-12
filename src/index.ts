@@ -6,6 +6,7 @@ const typeDefs = gql`
   type Participant {
     id: String!
     email: String!
+    countryCode: String!
     phoneNumber: String!
     firstName: String
     lastName: String
@@ -15,6 +16,7 @@ const typeDefs = gql`
   input ParticipantInput {
     id: String!
     email: String!
+    countryCode: String!
     phoneNumber: String!
     firstName: String
     lastName: String

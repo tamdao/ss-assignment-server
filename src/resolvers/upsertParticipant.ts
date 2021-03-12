@@ -1,12 +1,15 @@
 module.exports = async (
   root,
-  { input: { id, email, phoneNumber, firstName, lastName, group } },
+  {
+    input: { id, email, countryCode, phoneNumber, firstName, lastName, group },
+  },
   { models }
 ) => {
   await models.Participants.upsert(
     {
       id,
       email,
+      countryCode,
       phoneNumber,
       firstName,
       lastName,
@@ -15,5 +18,5 @@ module.exports = async (
     { where: { id } }
   );
 
-  return { id, email, phoneNumber, firstName, lastName, group };
+  return { id, email, countryCode, phoneNumber, firstName, lastName, group };
 };
