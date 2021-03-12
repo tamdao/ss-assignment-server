@@ -1,6 +1,17 @@
 # SurveySaurus | Take-Home Test
 
+## Mission summary (features)
 
+- **Setup a GraphQL**
+- **Validate the inputs before saving to database**
+- **Throw GraphQL error**
+
+## BONUS Points
+
+- use cdn
+- cache assets
+- use service worker
+- cache API
 
 ## Available Scripts
 
